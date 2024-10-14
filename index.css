@@ -1,0 +1,197 @@
+/* Parallax Background */
+.parallax-bg {
+    background-image: url('https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    height: 100vh; /* Full viewport height */
+    background-attachment: fixed; /* Keeps the image fixed in place */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /* Ensure background stays behind all content */
+}
+
+/* General Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: transparent; 
+    color: #333;
+    padding-top: 80px; /* Adjust padding to fit header */
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 76, 140, 0.9); /* Slightly transparent background for the header */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10; /* Stay above everything else */
+    display: flex;
+    align-items: center; /* Vertically center elements inside header */
+    justify-content: center; /* Align logo and navigation to center */
+}
+
+/* Header Logo Styling */
+.header-logo {
+    width: 60px; /* Smaller logo size */
+    height: auto;
+    margin-right: 15px; /* Margin between logo and navigation */
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Vertically center links */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px; /* Reduce gap between navigation links */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    position: relative;
+    z-index: 2; /* Stay above the background */
+}
+
+/* Section Styling */
+section {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for text sections */
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Adds rounded corners to the sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for better visual separation */
+    font-family: 'Georgia', serif; /* Enhanced font style for sections */
+    line-height: 1.6; /* Improved readability */
+    text-align: justify;
+}
+
+/* Headings Styling */
+h1 {
+    color: #ff4500;
+    font-family: 'Cinzel', serif; /* Decorative font for the main heading */
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #ff4500;
+    font-family: 'Cinzel', serif; /* Consistent font for subheadings */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Featured Image Styling */
+.featured-image {
+    text-align: center;
+    margin: 40px 0; /* Add margin to separate the featured image from other content */
+}
+
+.featured-airshow-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 76, 140, 0.9); /* Slightly transparent footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* Directions Link Styling */
+#directions-link {
+    display: block;
+    text-align: center;
+    color: darkred;
+    font-weight: bold;
+    text-decoration: none;
+    text-decoration-color: black;
+    margin-top: 20px;
+}
+
+/* Google Maps Embed Styling */
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* FAQ Section Styling */
+#faq {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#faq h1 {
+    text-align: center;
+    color: #ff4500;
+    margin-bottom: 40px;
+}
+
+/* Styling for each FAQ question and answer */
+article {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent box for readability */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners for a nicer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for better visual separation */
+}
+
+article h3 {
+    margin-top: 0;
+    color: #004c8c;
+    font-family: 'Cinzel', serif; /* Consistent decorative font */
+    font-size: 1.5em;
+}
+
+article p {
+    margin-left: 20px;
+}
+
+/* Social Media Icon Styling */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 25px; /* Resize icons to make them smaller */
+    height: 25px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight hover effect to make it more interactive */
+}
