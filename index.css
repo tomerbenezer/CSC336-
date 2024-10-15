@@ -82,12 +82,13 @@ main {
 section {
     background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for text sections */
     padding: 30px;
+    font-size: 1.2em;
     margin-bottom: 20px;
     border-radius: 10px; /* Adds rounded corners to the sections */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for better visual separation */
     font-family: 'Georgia', serif; /* Enhanced font style for sections */
     line-height: 1.6; /* Improved readability */
-    text-align: justify;
+    text-align: center;
 }
 
 /* Headings Styling */
@@ -194,4 +195,363 @@ article p {
 
 .social-icon:hover {
     transform: scale(1.1); /* Slight hover effect to make it more interactive */
+}
+/* Feature Blocks Styling */
+#features {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.feature-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+}
+
+.feature-block img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.feature-block p  {
+    font-size: 1.2em;
+    font-family: 'Georgia', serif;
+    width: 55%;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* Alignments for alternating blocks */
+.feature-block.left {
+    flex-direction: row;
+}
+
+.feature-block.right {
+    flex-direction: row-reverse;
+}
+
+/* Outside Text Styling */
+.outside-text {
+    text-align: center;
+    margin: 50px 0;
+    font-family: 'Georgia', serif;
+}
+
+.outside-text p {
+    font-size: 1.8em;
+    font-family: 'Georgia', serif;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Animation for Flying Circus Aerodrome */
+@keyframes rotateJump {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    25% {
+        transform: rotate(-10deg) translateY(-10px);
+    }
+    50% {
+        transform: rotate(10deg) translateY(0);
+    }
+    75% {
+        transform: rotate(-10deg) translateY(10px);
+    }
+    100% {
+        transform: rotate(0deg) translateY(0);
+    }
+}
+
+.outside-text h1 {
+    font-size: 3.5em;
+    color: #ff4500;
+    font-family: 'Uncial Antiqua', serif; /* New distinct font */
+    letter-spacing: 3px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    animation: rotateJump 2s ease-in-out infinite; /* Apply animation */
+}
+
+/* Color Change Animation */
+@keyframes colorChange {
+    0% {
+        color: #ff4500; /* Initial color */
+    }
+    25% {
+        color: #004c8c; /* Blue */
+    }
+    50% {
+        color: #32CD32; /* Lime Green */
+    }
+    75% {
+        color: #8A2BE2; /* BlueViolet */
+    }
+    100% {
+        color: #ff4500; /* Return to original color */
+    }
+}
+
+/* Styling for "Flying Circus Airshow" */
+#home h1 {
+    font-size: 3.5em;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    animation: colorChange 5s infinite; /* Cycle through colors every 5s */
+    margin-top: 30px; /* Space from top */
+}
+
+/* Welcome Message Styling */
+#home p{
+    font-family: 'Georgia', serif;
+    font-size: 1.8em; /* Increase font size */
+    color: 0, 0, 0, 0.7; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; /* Limit width for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for extra visibility */
+}
+/* Credit Card Section Styling */
+.credit-card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #f06c64, #f79d65); /* Gradient background */
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: white;
+    text-align: center;
+}
+
+.credit-card-section p {
+    font-size: 1.5em;
+    margin-right: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.credit-card-logos {
+    display: flex;
+    gap: 10px;
+}
+
+.credit-card-logos img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.credit-card-logos img:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+/* Links Section Styling */
+.links-section {
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link-block {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Adjust width for two items per row */
+}
+
+.link-block img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.link-block a {
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    color: #004c8c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-block a:hover {
+    color: #ff4500; /* Change color on hover */
+}
+/* Table Styling for Pricing */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Georgia', serif;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #004c8c;
+    color: white;
+    font-size: 1.2em;
+}
+
+td {
+    font-size: 1.1em;
+}
+
+/* Gift Certificate Section */
+.certificate-download {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.certificate-download h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8em;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.download-icon {
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.download-icon:hover {
+    transform: scale(1.2); /* Slight enlargement on hover */
+}
+
+/* Additional Information Styling */
+.additional-info {
+    margin-top: 30px;
+}
+
+.additional-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    text-align: justify;
+}
+
+/* General Styling */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+    line-height: 1.6;
+}
+
+/* Headings Styling */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #004c8c; /* Blue for main title */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #004c8c; /* Blue for section titles */
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: #ff4500; /* Red for important subheadings */
+    margin-top: 20px;
+}
+
+/* Text Styling */
+p, ul, li {
+    font-size: 1.2em;
+}
+
+/* Highlighting important notes with red */
+p strong {
+    color: #ff4500; /* Red for emphasis */
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Pricing - Red for Prices */
+li strong {
+    color: #ff4500; /* Red for prices */
+}
+
+/* Contact Information - Green for Positive Notes */
+ul li:last-child {
+    color: #32CD32; /* Green for the last note */
+}
+
+/* Link Styling */
+a {
+    color: #004c8c; /* Blue links */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #32CD32; /* Green on hover */
+}
+
+/* Safety Info Styling */
+.additional-info p {
+    font-size: 1.2em;
+    color: #004c8c; /* Blue for safety information */
+}
+
+.additional-info p strong {
+    color: #ff4500; /* Red for important warnings */
+}
+
+
+/* Ensure bullet points are always black */
+/* Modern Browsers: Using ::marker */
+li::marker {
+    color: black; /* Set bullet color to black */
+}
+
+
+li::before {
+    content: "•"; /* Unicode for a bullet */
+    color: black; /* Bullet color */
+    position: absolute;
+    left: -1.2em; /* Adjust position as needed */
+    /* Optional: Adjust vertical alignment */
+    top: 0;
 }
