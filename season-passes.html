@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Georgia:wght@400&display=swap" rel="stylesheet">
+    <title>Season Pass Application</title>
+</head>
+
+
+<body>
+    <!-- Parallax Background -->
+    <div class="parallax-bg"></div>
+
+    <header>
+        <!-- Flying Circus Logo -->
+        <a href="index.html">
+            <img src="https://www.flyingcircusairshow.com/images/fca.gif" alt="Flying Circus Logo" class="header-logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="prices-schedule.html">Prices & Schedule</a></li>
+                <li><a href="rides.html">Rides</a></li>
+                <li><a href="balloon-festival.html">Balloon Festival</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="scouts.html">Scouts</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Season Pass Section -->
+        <section id="season-pass">
+            <h1>Season Pass Application Form</h1>
+            <p class="highlight">Get Your Season Pass for Just $60 Per Pass!</p>
+
+            <!-- Form Area -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Main Contact Information</legend>
+                    <label for="main-name">Main Contact Name:</label>
+                    <input type="text" id="main-name" name="main-name" required><br>
+
+                    <label for="address">Mailing Address:</label>
+                    <input type="text" id="address" name="address" required><br>
+
+                    <label for="city">City/Town:</label>
+                    <input type="text" id="city" name="city" required>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required>
+                    <label for="zip">Zip:</label>
+                    <input type="text" id="zip" name="zip" required><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <!-- Individual Names and Birth Dates -->
+                <fieldset>
+                    <legend>Season Pass Holders (Up to 10)</legend>
+
+                    <div class="pass-holder">
+                        <label for="name1">1. Name:</label>
+                        <input type="text" id="name1" name="name1" required>
+                        <label for="birthdate1">Birth Date:</label>
+                        <input type="date" id="birthdate1" name="birthdate1">
+                    </div>
+
+                    <div class="pass-holder">
+                        <label for="name2">2. Name:</label>
+                        <input type="text" id="name2" name="name2">
+                        <label for="birthdate2">Birth Date:</label>
+                        <input type="date" id="birthdate2" name="birthdate2">
+                    </div>
+
+                    <div class="pass-holder">
+                        <label for="name3">3. Name:</label>
+                        <input type="text" id="name3" name="name3">
+                        <label for="birthdate3">Birth Date:</label>
+                        <input type="date" id="birthdate3" name="birthdate3">
+                    </div>
+
+                    <div class="pass-holder">
+                        <label for="name4">4. Name:</label>
+                        <input type="text" id="name4" name="name4">
+                        <label for="birthdate4">Birth Date:</label>
+                        <input type="date" id="birthdate4" name="birthdate4">
+                    </div>
+
+                    <div class="pass-holder">
+                        <label for="name5">5. Name:</label>
+                        <input type="text" id="name5" name="name5">
+                        <label for="birthdate5">Birth Date:</label>
+                        <input type="date" id="birthdate5" name="birthdate5">
+                    </div>
+
+                    <div class="pass-holder">
+                        <label for="name6">6. Name:</label>
+                        <input type="text" id="name6" name="name6">
+                        <label for="birthdate6">Birth Date:</label>
+                        <input type="date" id="birthdate6" name="birthdate6">
+                    </div>
+
+                    <div class="pass-holder">
+                        <label for="name7">7. Name:</label>
+                        <input type="text" id="name7" name="name7">
+                        <label for="birthdate7">Birth Date:</label>
+                        <input type="date" id="birthdate7" name="birthdate7">
+                    </div>
+
+                    <div class="pass-holder">
+                        <label for="name8">8. Name:</label>
+                        <input type="text" id="name8" name="name8">
+                        <label for="birthdate8">Birth Date:</label>
+                        <input type="date" id="birthdate8" name="birthdate8">
+                    </div>
+
+                    <div class="pass-holder">
+                        <label for="name9">9. Name:</label>
+                        <input type="text" id="name9" name="name9">
+                        <label for="birthdate9">Birth Date:</label>
+                        <input type="date" id="birthdate9" name="birthdate9">
+                    </div>
+ 
+                    <div class="pass-holder">
+                        <label for="name10">10. Name:</label>
+                        <input type="text" id="name10" name="name10">
+                        <label for="birthdate10">Birth Date:</label>
+                        <input type="date" id="birthdate10" name="birthdate10">
+                    </div>
+                </fieldset>
+
+                <!-- Total Due Section -->
+                <fieldset class="total-due">
+                    <legend>Total Amount Due</legend>
+                    <p><strong>$60 per pass</strong></p>
+                    <label for="pass-total">Total Passes:</label>
+                    <input type="number" id="pass-total" name="pass-total" min="1" max="10" required>
+                    <p>Total Due: $<span id="total-due-amount">60</span></p>
+                </fieldset>
+
+                <!-- Submission Instructions -->
+                <div class="submission-info">
+                    <div class="submit-section">
+                        <button type="button" class="download-button">Download Completed Form</button>
+                    </div> 
+                    <p><strong>Please complete this form and mail it with payment to:</strong></p>
+                    <address>
+                        Flying Circus Airshow Season Pass<br>
+                        P.O. Box 99<br>
+                        Bealeton, VA 22712
+                    </address>
+                    <p><strong>Make check or money order payable to:</strong></p>
+                    <p>The Flying Circus Airshow</p>
+                </div>
+
+                
+                <!-- Ride Info Section -->
+                <div class="ride-info">
+                    <p>Biplane Rides Available before and after the show. Ride tickets can be purchased at the gift shop.</p>
+                    <p><em>Rides are subject to weather conditions and availability of pilots and airplanes.</em></p>
+                </div>
+            </form>
+
+            <!-- Images for Season Pass Section -->
+            <div class="image-section">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/WACO-UPF-7-CF-OGZ-1500-6.jpg/1200px-WACO-UPF-7-CF-OGZ-1500-6.jpg" alt="Biplane Ride" class="biplane-image">
+            </div>
+        </section>
+
+        <!-- Featured Image Section (Flying Circus) -->
+        <div class="featured-image">
+            <img src="https://www.flyingcircusairshow.com/images/fca-air.gif" alt="Flying Circus Airshow" class="featured-airshow-image">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Flying Circus Airshows, Inc. All rights reserved.</p>
+        <p>Follow us:</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/explore/locations/338762656212856/bealton-flying-circus/?hl=en" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/flyingcircusairshow" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('.download-button').addEventListener('click', function() {
+                const mainName = document.getElementById('main-name').value;
+                const address = document.getElementById('address').value;
+                const city = document.getElementById('city').value;
+                const state = document.getElementById('state').value;
+                const zip = document.getElementById('zip').value;
+                const phone = document.getElementById('phone').value;
+                const email = document.getElementById('email').value;
+
+                let passHolderData = '';
+                for (let i = 1; i <= 10; i++) {
+                    const name = document.getElementById(`name${i}`).value;
+                    const birthdate = document.getElementById(`birthdate${i}`).value;
+                    if (name) {
+                        passHolderData += `Pass Holder ${i}: ${name}, Birth Date: ${birthdate}\n`;
+                    }
+                }
+
+                const totalPasses = document.getElementById('pass-total').value;
+                const totalDue = totalPasses * 60;
+
+                const formData = `
+                Main Contact Information:
+                Name: ${mainName}
+                Address: ${address}, ${city}, ${state} ${zip}
+                Phone: ${phone}
+                Email: ${email}
+
+                Season Pass Holders:
+                ${passHolderData}
+
+                Total Passes: ${totalPasses}
+                Total Due: $${totalDue}
+                `;
+
+                const blob = new Blob([formData], { type: 'text/plain' });
+                const link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = 'Season_Pass_Application.txt';
+                link.click();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
