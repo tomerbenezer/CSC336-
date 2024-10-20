@@ -572,3 +572,158 @@ li::before {
     background-color: #e63900;
     transform: scale(1.05);
 }
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px)); /* Ensure consistent size for all videos */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-item {
+    text-align: center;
+    font-style: italic; /* Add italics to video titles */
+}
+
+.video-item img {
+    width: 200px; /* Consistent square size */
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-item p {
+    margin-top: 10px;
+    font-family: 'Georgia', serif;
+    font-size: 1.1em;
+    color: #004c8c;
+    font-weight: bold;
+}
+
+/* Pricing Table Styling */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Georgia', serif;
+    text-align: left;
+}
+
+.pricing-table th, .pricing-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.pricing-table th {
+    background-color: #004c8c;
+    color: white;
+}
+
+.pricing-table td {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.7);
+}
+
+.pricing-table tr:hover {
+    background-color: rgba(230, 230, 230, 0.7);
+}
+
+/* Aircraft Block Styling */
+.aircraft-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background for text readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    line-height: 1.6;
+}
+
+.aircraft-block img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add image shadow for emphasis */
+    margin: 0 20px;
+}
+
+.aircraft-block.left img {
+    order: 1; /* Image on the left */
+}
+
+.aircraft-block.left p {
+    order: 2;
+    flex: 1;
+    text-align: left;
+}
+
+.aircraft-block.right img {
+    order: 2; /* Image on the right */
+}
+
+.aircraft-block.right p {
+    order: 1;
+    flex: 1;
+    text-align: right;
+}
+
+/* Crew Grid Styling */
+.crew-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.crew-member {
+    text-align: center;
+}
+
+.crew-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.crew-member p {
+    font-family: 'Georgia', serif;
+    font-size: 1.1em;
+    color: #004c8c;
+    font-weight: bold;
+}
+
+/* Featured Group Image */
+.featured-airshow-image {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    display: block;
+}
+
+/* Crew Message Section Styling */
+#crew-message {
+    background-color: rgba(255, 255, 255, 0.8); /* Gray background with transparency */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    text-align: center; /* Center align the text */
+    margin: 20px auto; /* Center the section and add spacing */
+    max-width: 800px; /* Limit the width of the section */
+}
+
+#crew-message p {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em; /* Make the text larger */
+    color: #333; /* Darker text color for readability */
+    font-weight: bold; /* Make the text bold */
+}
+
